@@ -1,11 +1,13 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import Fly from './fly.js';
 
 function App() {
-  return (
-    <div className="App">
-        HI check again
+  return(
+    <div className='App'>
+      {/* <h1>change</h1> */}
+      <Fly flyQuote='bird'/>
+      <hr/>
+      <Fly flyQuote='baloon'/>
     </div>
   );
 }
