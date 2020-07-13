@@ -5,7 +5,7 @@ function Fly(props){
     return (
         <div>
             {/* <h1>Fly like a bird</h1> */}
-    <p>Fly like a {props.flyQuote}</p>
+            <p>Fly like a {props.flyQuote}</p>
         </div>
     );
 }
