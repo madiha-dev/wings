@@ -59,3 +59,9 @@ export default App;
 
   -useState: one of hooks 
 */
+
+/* Global state concept
+  There are 2 ways 
+  1- use REDUX an external library
+  2- use  Context API
+*/
