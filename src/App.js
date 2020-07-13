@@ -1,6 +1,7 @@
 import React, {useState} from 'react';  //import a variable
 import Fly from './fly.js';
 import {Message} from './Message';
+import './App.css';
 
 function App() {
   let [count, setCount] = useState(1) //hook of use state
@@ -16,9 +17,12 @@ function App() {
       - hook can't use in class
         */
 
+  let[isMorning, setMorning] = useState(true)
 
   return(
-    <div className='App'>
+    // <div className='box'>
+    //Backtick concept: `` : can use for multiline string, for var use $
+    <div className={`box ${isMorning ? 'dayLight' : ''}`}>
       {/* <h1>change</h1> */}
       <Fly flyQuote='bird'/>
       <hr/>
@@ -34,6 +38,10 @@ function App() {
         }>Update Counter 
       </button>
       <Message counter={count}/>
+      <hr/>
+      <h1>Day Night</h1>
+      <h5>Time is {isMorning ? 'Morning' : 'Night'}</h5>
+      <button onClick={() => setMorning(!isMorning)}>Update Time</button>
     </div>
   );
 }
